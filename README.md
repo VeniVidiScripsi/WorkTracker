@@ -1,13 +1,6 @@
-## 📦 Project Name
-
-**WorkTrackr**
-*A lightweight CLI system to track worker sign-ins, sign-outs, and calculate work hours using JSON.*
-
----
-
 ## 📄 `README.md`
 
-```markdown
+
 # WorkTrackr
 
 **WorkTrackr** is a clean, modular, and extensible command-line system that allows employees or freelancers to track their working hours by signing in and out. It uses JSON as a lightweight data store and is designed with full compliance to the **SOLID principles**.
