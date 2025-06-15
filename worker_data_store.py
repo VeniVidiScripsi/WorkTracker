@@ -4,7 +4,7 @@ from typing import Dict
 
 
 class WorkerDataStore:
-    def __init__(self, data_file: str = "worker_data.json"):
+    def __init__(self, data_file: str = 'worker_data.json'):
         self.data_file = Path(data_file)
         self.data_file.write_text('{}') if not self.data_file.exists() else None
 

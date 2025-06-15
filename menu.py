@@ -10,15 +10,15 @@ class Menu:
         self.actions[description] = action
 
     def display_and_get_choice(self) -> Callable[[], None]:
-        print(f"Welcome to the {self.system_name}!")
+        print(f'Welcome to the {self.system_name}!')
         descriptions = list(self.actions.keys())
         for idx, desc in enumerate(descriptions, 1):
-            print(f"{idx}. {desc}")
+            print(f'{idx}. {desc}')
         try:
-            choice = int(input("Choose an option: "))
+            choice = int(input('Choose an option: '))
             return self.actions.get(descriptions[choice - 1], self.invalid_choice)
         except (ValueError, IndexError):
             return self.invalid_choice
 
     def invalid_choice(self) -> None:
-        print("Invalid choice.")
+        print('Invalid choice.')
