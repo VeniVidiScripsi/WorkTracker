@@ -1,9 +1,10 @@
 from datetime import datetime, timedelta
-from worker_data_store import WorkerDataStore
+
+from managers.worker_data_store import WorkerDataStore
 
 
 class WorkerCardManager:
-    def __init__(self, store: WorkerDataStore):
+    def __init__(self, store: WorkerDataStore) -> None:
         self.store = store
         self.data = self.store.load()
 
